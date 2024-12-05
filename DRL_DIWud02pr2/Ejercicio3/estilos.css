@@ -1,0 +1,358 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header p {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 50px;
+    float: left;
+    font-size: 20px;
+}
+
+ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+li {
+    margin-left: 35px;
+    display: inline;
+    margin-right: 25px;
+}
+
+ul {
+    margin-left: 15%;
+    float: left;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 8px;
+    border-color: white;
+}
+
+#inicia {
+    margin-left: 20px;
+    background-color: white;
+    font-weight: bold;
+}
+
+#descarga {
+    margin-left: 20px;
+    background-color: #6c0eec;
+    color: white;
+    font-weight: bold;
+}
+
+#area {
+    background-color: #f5f5f5;
+    margin-left: 40%;
+    width: 60%;
+}
+
+/* Ajustes para las secciones */
+main {
+    font-size: 0;
+    /* Soluciona el espacio en blanco entre inline-blocks */
+}
+
+#v1 {
+    height: 100vh;
+}
+
+#seccion11,
+#seccion21 {
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    /* Misma altura para ambas */
+    font-size: 16px;
+    /* Restaura el tamaño de fuente dentro de las secciones */
+}
+
+#seccion11 {
+    background-color: white;
+    /* Blanco para esta sección */
+    width: 40%;
+}
+
+#seccion21 {
+    background-color: #f5f5f5;
+    /* Color gris claro para esta sección */
+    width: 60%;
+}
+
+#seccion21 img {
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 50%;
+    /* Ajusta el tamaño de la imagen */
+}
+
+#seccion11 #nuevo {
+    margin-top: 80px;
+    margin-left: 50px;
+    font-size: 15px;
+    background-color: #6c0eec;
+    color: white;
+    font-weight: bold;
+    padding: 1%;
+}
+
+#seccion11 button,
+#seccion11 #pbot {
+    display: inline-block;
+}
+
+#pbot {
+    font-size: 12px;
+    color: #6c0eec;
+}
+
+#h1pr {
+    margin-top: 25px;
+}
+
+#seccion11 h1 {
+    margin-left: 50px;
+    font-size: 66px;
+}
+
+span {
+    color: #6c0eec;
+}
+
+#pnormal {
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+#abre {
+    margin-top: 20px;
+    margin-left: 45px;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #6c0eec;
+    color: white;
+}
+
+#iconos {
+    display: block;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#v2 {
+    clear: both;
+    height: 100vh;
+}
+
+#tudec {
+    margin-top: 50px;
+    margin-left: 180px;
+    float: left;
+}
+
+#h1pr2 {
+    margin-top: 100px;
+    margin-left: 220px;
+    font-size: 50px;
+}
+
+#h1se2 {
+    margin-left: 220px;
+    font-size: 45px;
+}
+
+#derecha {
+    float: left;
+    font-size: 20px;
+}
+
+#derecha span,
+#derecha #menpri {
+    display: inline-block;
+}
+
+#derecha #num {
+    margin-left: 220px;
+}
+
+#num,
+#menpri {
+    font-weight: bold;
+}
+
+#derecha #menpri {
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#derecha #texto {
+    margin-left: 275px;
+    font-size: 16px;
+}
+
+#v3 {
+    clear: both;
+    height: 100vh;
+}
+
+#venta3 {
+    background-color: #f5f5f5;
+    width: 65%;
+    border: 1px solid #f5f5f5;
+    border-radius: 30px;
+    margin-top: 200px;
+    margin-left: 100px;
+    padding: 70px;
+}
+
+#venta3 h1 {
+    font-size: 55px;
+}
+
+#venta3 p {
+    font-size: 18px;
+}
+
+#abre2 {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #6c0eec;
+    color: white;
+}
+
+#venta3 {
+    background-color: #f5f5f5;
+    width: 65%;
+    border: 1px solid #f5f5f5;
+    border-radius: 30px;
+    margin-top: 200px;
+    margin-left: 100px;
+    padding: 70px;
+}
+
+/* Aplica flotado a la izquierda para el texto */
+#venta3 h1, #venta3 p {
+    float: left; /* Alinea el texto a la izquierda */
+    width: 60%; /* Ocupa el 50% del ancho para dar espacio a la imagen */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Aplica flotado a la derecha para la imagen */
+#venta3 img {
+    float: right; /* Alinea la imagen a la derecha */
+    width: 40%; /* Ajusta el tamaño de la imagen */
+    max-width: 300px; /* Asegura que la imagen no ocupe demasiado espacio */
+}
+
+#v4 {
+    clear: both;
+    height: 100vh;
+    font-size: 20px;
+}
+
+#venta4 {
+    margin-left: 200px;
+}
+
+#venta4 h1 {
+    font-size: 55px;
+}
+
+#venta4 p {
+    margin-bottom: 35px;
+}
+
+footer {
+    clear: both;
+    height: 100vh;
+    font-size: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#nuevcuenta {
+    margin-left: 260px;
+    margin-top: 100px;
+    background-color: #6c0eec;
+    width: 65%;
+    color: white;
+    height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+#nuevcuenta h1 {
+    font-size: 55px;
+}
+
+#cuadrado {
+    background-color: white;
+    color: black;
+    width: 40%;
+    text-align: center;
+    margin-top: 45px;
+    margin-left: 305px;
+}
+
+#abre3 {
+    background-color: #6c0eec;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#listas {
+    margin-left: 200px;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+
+#listas p {
+    margin-top: 25px;
+}
+
+#lista1,#lista2,#lista3 {
+    float: left;
+    margin-right: 145px;
+}
+
+#lista4 p{
+    margin-bottom: 20px;
+}
+
+#ultimo{
+    border-top: 0.5px solid rgb(199, 198, 198);
+    width: 80%;
+    margin-left: 120px;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+#ultimo p{
+    display: inline;
+    font-size: 12px;
+}
+
+#p2 {
+    margin-left: 730px;
+}
+
+#p3 {
+    margin-left: 50px;
+}

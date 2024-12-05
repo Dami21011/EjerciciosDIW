@@ -1,0 +1,49 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffe0;
+    text-align: center;
+}
+.contenedor{
+    margin: 0 auto;
+    width: 980px;
+    background-color: greenyellow;
+}
+/* Cabecera */
+.header {
+    background-color: #F2C2B7;
+    text-align: center;
+    height: 100px;
+    width: 980px;
+}
+
+/* Navegación */
+.menu {
+    background-color: #F0F8E2;
+    float: left;
+    width: 180px;
+    height: 250px;
+    padding: 10px;
+}
+
+.principal {
+    background-color: #80DAEB;
+    width: 565px;
+    height: 510px;
+    display: inline-block;
+}
+
+.lateral {
+    background-color: #B7C9E2;
+    width: 210px;
+    height: 510px;
+    display: inline-block;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #F2C2B7;
+    text-align: center;
+    height: 50px;
+    width: 980px;
+}

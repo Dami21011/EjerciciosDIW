@@ -1,0 +1,170 @@
+/* Reinicia el padding y margen para todos los elementos */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Define el color de fondo para todo el documento HTML */
+html {
+    background-color: white;
+}
+
+/* Estilos para el cuerpo con texto centrado y un fondo degradado */
+body{
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        rgb(227, 76, 38) 0%,
+        rgb(240, 101, 41, 0) 90%
+    );
+}
+
+/* Contenedor principal de la página con anchura fija, centrado y borde redondeado */
+#page{
+    width: 960px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+/* Estilos para el encabezado con fuente, color y degradado de fondo */
+header{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1.1em;
+    background: linear-gradient(
+        to bottom,
+        #0170B9,
+        #27AADE
+    );
+    border-radius: 20px 20px 0 0;
+    border-bottom: 6px solid black;
+}
+
+/* Estilo para el título principal con imagen de fondo */
+h1 {
+    background-image: url("imgs/logo.png");
+    background-repeat: no-repeat;
+    background-position: 25px center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* Estilos para la barra de navegación con fuente, color y fondo degradado */
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    color: silver;
+    font-size: 1.4em;
+    text-align: center;
+    background: linear-gradient(
+        to bottom,
+        rgb(213, 186, 50),
+        rgb(255, 218, 62)
+    );
+}
+
+/* Estilos para los elementos de la lista de navegación */
+nav li{
+    list-style: none;
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+}
+
+/* Imagen de fondo para el elemento 'contenidos' en la lista de navegación */
+li#contenidos {
+    background-image: url("imgs/book.png");
+    background-repeat: no-repeat;
+    background-position: 12px center;    
+}
+
+/* Imagen de fondo para el elemento 'videos' en la lista de navegación */
+li#videos {
+    background-image: url("imgs/film.png");
+    background-repeat: no-repeat;
+    background-position: 12px center;
+}
+
+/* Imagen de fondo para el elemento 'contacto' en la lista de navegación */
+li#contacto{
+    background-image: url("imgs/mail.png");
+    background-repeat: no-repeat;
+    background-position: 12px center;
+}
+
+/* Estilo para enlaces sin subrayado y color blanco */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Color de los enlaces al pasar el cursor sobre ellos */
+a:hover {
+    color: orange;
+}
+
+/* Estilos para el contenedor principal */
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    background-color: white;
+    height: 502px;
+}
+
+/* Estilos para cada artículo individual en la página */
+article {
+    width: 240px;
+    border-style: solid;
+    border-width: 70px 20px 64px 22px;
+    border-image: url("recursos/movil.png") 70 20 64 22;
+    background-color: white;
+    text-align: center;
+    line-height: 1.8em;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 22px;
+    margin: 10px;
+    float: left;
+}
+
+/* Estilos para el encabezado dentro de cada artículo */
+.article_header {
+    border-bottom: 1px solid #999999;
+}
+
+/* Estilos para los títulos de segundo nivel */
+h2{
+    padding: 10px;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 2px gray;
+}
+
+/* Estilos para el pie de página */
+footer {
+    clear: both;
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(
+        to top,
+        #0170B9,
+        #27AADE
+    );
+    border-top: 6px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+

@@ -1,0 +1,54 @@
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 60em;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 16em;
+}
+
+#descripcion {
+    display: flex;
+    flex-direction: column;
+    width: 44em;
+}
+
+#contenido {
+    display: flex;
+    flex-direction: column;
+    width: 44em;
+    justify-content: center;
+}
+
+#contenido ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*Eliminamos el margen de la lista*/
+    padding: 0;
+}
+
+#contenido li {
+    list-style: none;
+    width: 32%;
+}
+
+#intcont {
+    display: flex;
+    flex-direction: column;
+}

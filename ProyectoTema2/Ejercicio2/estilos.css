@@ -1,0 +1,367 @@
+/* Importamos la fuente 'Pacifico' y otras configuraciones de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Pacifico&display=swap');
+
+/* Declaración de variables CSS globales */
+:root {
+    --fuente-principal: 'Pacifico'; /* Fuente principal */
+    --fuente-alternativa: sans-serif; /* Fuente secundaria */
+    --tam-fuente-xs: 12px; /* Tamaño de fuente extra pequeño */
+    --tam-fuente-sm: 13px; /* Tamaño de fuente pequeño */
+    --tam-fuente-md: 15px; /* Tamaño de fuente mediano */
+    --tam-fuente-lg: 17px; /* Tamaño de fuente grande */
+    --tam-fuente-xl: 17px; /* Tamaño de fuente extra grande */
+    --tam-max-contenedor-x: 1200px; /* Ancho máximo del contenedor */
+    --tam-alto-encabezado-xs: 8vh; /* Altura del encabezado */
+    --negro: #000; /* Color negro */
+    --blanco: #FFF; /* Color blanco */
+    --fondo-encabezado: #B8D2F4; /* Fondo del encabezado */
+    --fondo-menu: var(--blanco); /* Fondo del menú */
+    --fondo-todo: var(--fondo-encabezado); /* Fondo global */
+    --color-texto: #517104; /* Color del texto principal */
+    --color-titulos-claro: #2CDA1C; /* Color claro para títulos */
+    --color-titulos-oscuro: #1F411C; /* Color oscuro para títulos */
+    --color-primario: #517104; /* Color primario */
+    --color-secundario: #83A705; /* Color secundario */
+    --color-opuesto-primario: #894B26; /* Color opuesto primario */
+    --color-opuesto-secundario: #F58A03; /* Color opuesto secundario */
+    --color-enlace: var(--color-opuesto-primario); /* Color de los enlaces */
+    --color-enlace-hover: var(--color-opuesto-secundario); /* Color de los enlaces en hover */
+    --color-transparencia: rgba(0, 0, 0, 0.5); /* Fondo transparente */
+}
+
+/* Estilos generales del documento */
+html {
+    font-family: var(--fuente-principal), var(--fuente-alternativa); /* Fuentes globales */
+    font-size: var(--tam-fuente-xs); /* Tamaño de fuente base */
+    background-color: var(--fondo-todo); /* Fondo general */
+    color: var(--color-texto); /* Color del texto */
+}
+
+/* Reinicio de márgenes y rellenos */
+*,
+:after,
+:before {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden; /* Deshabilitamos el scroll horizontal */
+}
+
+/* Secciones principales con altura del 100% */
+#inicio,
+#nosotros,
+#contacto {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Configuración del contenedor principal */
+#contenedor {
+    max-width: var(--tam-max-contenedor-x); /* Ancho máximo */
+    display: flex;
+    flex-direction: column; /* Organización en columna */
+}
+
+/* Configuración del encabezado */
+header {
+    display: flex; /* Usamos flexbox */
+    flex-direction: row; /* Los elementos en fila */
+    justify-content: flex-start; /* Alineación a la izquierda */
+    height: var(--tam-alto-encabezado-xs); /* Altura fija */
+}
+
+header img {
+    width: 10%; /* Ancho de la imagen del logo */
+}
+
+header h1 {
+    font-size: 2rem; /* Tamaño del título */
+    color: var(--color-primario); /* Usamos el color primario */
+}
+
+/* Configuración del menú de navegación */
+nav ul {
+    background-color: var(--fondo-menu); /* Fondo del menú */
+}
+
+/* Estilos de los ítems del menú */
+li {
+    border-bottom: 1px solid var(--color-enlace); /* Borde inferior */
+    text-align: center; /* Centramos el texto */
+    font-size: 2.2rem; /* Tamaño del texto */
+    height: 8vh; /* Altura del ítem */
+}
+
+/* Estilos de los enlaces */
+li a {
+    text-decoration: none; /* Quitamos el subrayado */
+    color: var(--color-enlace); /* Usamos el color de enlace */
+}
+
+/* Efecto hover en los enlaces */
+#lista a:hover {
+    color: var(--color-enlace-hover); /* Color cuando el cursor está sobre el enlace */
+}
+/* Imagen de fondo y estilo de la sección con ID 'Imagen1' */
+#Imagen1 {
+    background-image: url(../imgs/casa-bosque-xs.jpg); /* Imagen de fondo */
+    height: 75vh; /* Altura de la imagen */
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+}
+
+/* Caja de contenido dentro de 'Imagen1' */
+#caja {
+    border: 2px solid var(--color-titulos-claro); /* Borde de la caja */
+    background-color: var(--color-transparencia); /* Fondo con transparencia */
+    width: 75%; /* Ancho de la caja */
+    height: 70%; /* Altura de la caja */
+    border-radius: 20px; /* Bordes redondeados */
+    display: flex; /* Flexbox para centrar contenido */
+    align-items: center; /* Centramos verticalmente */
+}
+
+/* Estilo del párrafo dentro de la caja */
+#caja p {
+    color: var(--color-titulos-claro); /* Color del texto */
+    font-size: 3rem; /* Tamaño del texto */
+    text-align: center; /* Texto centrado */
+}
+
+/* Estructura de las secciones 'inicio' y 'nosotros' */
+#inicio, #nosotros {
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Organización en columna */
+}
+
+/* Configuración de la sección 'nosotros' */
+#nosotros {
+    background-image: url(../imgs/texture-1674066_640.jpg); /* Imagen de fondo */
+    align-items: center; /* Alineamos al centro */
+    padding-bottom: 0; /* Sin espacio inferior */
+}
+
+/* Contenido de texto dentro de 'nosotros' */
+#nosotros #texto {
+    margin-top: 3rem; /* Separación superior */
+    width: 80%; /* Ancho del texto */
+}
+
+/* Estilo del título en 'nosotros' */
+#texto h1 {
+    font-size: 3rem; /* Tamaño del título */
+    text-align: center; /* Texto centrado */
+}
+
+/* Imagen de fondo en la sección con ID 'Imagen2' */
+#Imagen2 {
+    background-image: url(../imgs/casa-cielo-xs.jpg); /* Imagen de fondo */
+    height: 50vh; /* Altura de la imagen */
+    width: 80%; /* Ancho de la imagen */
+    margin-top: 5rem; /* Margen superior */
+    border: 2px solid var(--color-titulos-oscuro); /* Borde oscuro */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+/* Configuración de la sección 'modelos' */
+#modelos {
+    background-color: var(--blanco); /* Fondo blanco */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Organización en columna */
+    padding-bottom: 0.5vh; /* Margen inferior pequeño */
+}
+
+/* Estilo del título en 'modelos' */
+#modelos h1 {
+    text-align: center; /* Texto centrado */
+    font-size: 3rem; /* Tamaño del título */
+}
+
+/* Párrafos dentro de 'modelos' */
+#modelos p {
+    width: 80%; /* Ancho del párrafo */
+}
+
+/* Contenedor adicional de texto dentro de 'modelos' */
+#modelos #texto2 {
+    margin-top: 3rem; /* Margen superior */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Organización en columna */
+    align-items: center; /* Centramos horizontalmente */
+}
+
+/* Imagen de fondo en la sección con ID 'Imagen3' */
+#Imagen3 {
+    background-image: url(../imgs/casa-basica-xs.jpg); /* Imagen de fondo */
+    height: 40vh; /* Altura de la imagen */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilo de los párrafos dentro de 'texto2' */
+#texto2 p {
+    margin-bottom: 3rem; /* Margen inferior */
+}
+
+/* Imagen de fondo en la sección con ID 'Imagen4' */
+#Imagen4 {
+    background-image: url(../imgs/casa-grande-xs.jpg); /* Imagen de fondo */
+    height: 30vh; /* Altura de la imagen */
+    width: 100%; /* Ancho completo */
+    margin-bottom: 2rem; /* Margen inferior */
+}
+
+/* Imagen de fondo en la sección con ID 'Imagen5' */
+#Imagen5 {
+    background-image: url(../imgs/casa-lago-xs.jpg); /* Imagen de fondo */
+    height: 40vh; /* Altura de la imagen */
+    width: 100%; /* Ancho completo */
+}
+/* Configuración de la sección 'galeria' */
+#galeria {
+    background-image: url(../imgs/texture-1674066_640.jpg); /* Imagen de fondo */
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Organización en columna */
+    align-items: center; /* Alineación al centro */
+}
+
+/* Estilo del título en la galería */
+#galeria h1 {
+    margin-top: 2rem; /* Margen superior */
+    font-size: 3rem; /* Tamaño del título */
+}
+
+/* Estilos de las imágenes en la galería */
+#Imagen6, #Imagen7, #Imagen8, #Imagen9, #Imagen10, #Imagen11 {
+    margin-top: 3rem; /* Margen superior */
+    width: 90%; /* Ancho de las imágenes */
+    height: 40vh; /* Altura de las imágenes */
+    border: 2px solid var(--color-titulos-oscuro); /* Borde oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Ajuste específico para la última imagen de la galería */
+#Imagen11 {
+    margin-bottom: 2rem; /* Margen inferior */
+}
+
+/* Configuración de la sección 'contacto' */
+#contacto {
+    background-image: url(../imgs/contacto-xs.jpg); /* Imagen de fondo */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    background-size: cover; /* Cubrir todo el contenedor */
+    background-position: center; /* Centrar la imagen */
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Organización en columna */
+    align-items: center; /* Alineación al centro */
+}
+
+/* Estilo del título en la sección de contacto */
+#contacto h1 {
+    margin-top: 3rem; /* Margen superior */
+    color: var(--color-opuesto-primario); /* Color opuesto primario */
+    font-size: 3rem; /* Tamaño del título */
+    margin-bottom: 8rem; /* Margen inferior */
+}
+
+/* Estilo del formulario */
+form {
+    color: var(--blanco); /* Color del texto */
+    background-color: var(--color-transparencia); /* Fondo transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 2.2rem; /* Relleno interno */
+    width: 80%; /* Ancho del formulario */
+    height: 50%; /* Altura del formulario */
+}
+
+/* Estilo del ícono de sobre (correo) */
+.fa-envelope {
+    color: var(--blanco); /* Color blanco */
+    font-size: var(--tam-fuente-xs); /* Tamaño pequeño */
+}
+
+/* Estilo del ícono de teléfono */
+.fa-phone {
+    color: var(--blanco); /* Color blanco */
+    font-size: var(--tam-fuente-xs); /* Tamaño pequeño */
+}
+
+/* Configuración de texto en el formulario */
+#textform {
+    width: 100%; /* Ancho completo */
+    text-align: center; /* Texto centrado */
+    margin-bottom: 2rem; /* Margen inferior */
+}
+
+/* Estilo general para los encabezados secundarios */
+h2 {
+    font-size: 2.7rem; /* Tamaño del texto */
+}
+
+/* Estilo de los inputs y textarea */
+input, textarea {
+    width: 100%; /* Ancho completo */
+    margin-bottom: 0; /* Sin margen inferior */
+}
+
+/* Ajuste específico para textarea */
+textarea {
+    height: 5rem; /* Altura del textarea */
+    resize: none; /* Deshabilitar el cambio de tamaño */
+}
+
+/* Configuración del pie de página */
+footer {
+    background-color: var(--color-opuesto-primario); /* Fondo oscuro */
+    color: var(--blanco); /* Color del texto */
+    height: 7vh; /* Altura del footer */
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+}
+
+/* Estilo de la flecha para regresar al inicio */
+#flecha {
+    display: none; /* Oculta por defecto */
+    position: fixed; /* Posición fija */
+    top: 92%; /* Posición desde arriba */
+    left: 85%; /* Posición desde la izquierda */
+    width: 10%; /* Ancho de la flecha */
+}
+
+/* Media queries para dispositivos pequeños */
+@media (min-width: 576px) and (max-width: 767px) {
+    p {
+        font-size: var(--tam-fuente-sm);
+    }
+
+    #Imagen2 {
+        margin-bottom: 2rem;
+    }
+
+    #Imagen5 {
+        height: 55vh;
+    }
+
+    #Imagen4,#Imagen5 {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* Media queries para dispositivos medianos */
+@media (min-width: 768px) and (max-width: 991px)  {
+
+}
+
+/* Media queries para dispositivos grandes */
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+}
+
+/* Media queries para dispositivos extra grandes */
+@media (min-width: 1200px) {
+
+}

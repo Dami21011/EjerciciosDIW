@@ -1,0 +1,99 @@
+/*Media query movil*/
+@media (max-width: 600px) {
+    #main h2 {
+        border-bottom: 1px solid grey;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7px;
+    }
+}
+
+/*Media query tablet*/
+@media (min-width: 601px) and (max-width: 1200px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    #datos ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #datos {
+        width: 30%;
+    }
+
+    #datos li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #derecha {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        width: 50%;
+    }
+
+    #derecha ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/*Media query ordenador*/
+@media (min-width: 1201px) {
+    #contenedor {
+        display: flex;
+        flex-direction: column; /* El h1 estará en la parte superior */
+    }
+    
+    #main {
+        display: flex;
+        flex-direction: row; /* Colocar los elementos uno al lado del otro */
+        gap: 20px; /* Separar los elementos */
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    #datos, #formacion, #experiencia {
+        width: auto; /* Permitir ajuste dinámico del tamaño */
+    }
+
+    #derecha {
+        display: flex;
+        flex-direction: row; /* Los elementos internos también estarán en fila */
+        gap: 20px;
+    }
+}
+
+#color {
+    color: blue;
+}
+
+strong {
+    color: black;
+}

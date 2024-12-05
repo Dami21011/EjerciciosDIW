@@ -1,0 +1,73 @@
+/*Media query tablet*/
+@media (min-width: 601px) and (max-width: 1200px) {
+    #contenedor {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    #main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #menu {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
+    
+    #derecha {
+        display: flex;
+        flex-direction: column;
+        width: 72.2%;
+    }
+    
+    #contenido {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        justify-content: center;
+    }
+    
+    #contenido ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*Eliminamos el margen de la lista*/
+        padding: 0;
+    }
+    
+    #contenido li {
+        list-style: none;
+        width: 32%;
+    }
+    
+    #intcont {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Media query para PC */
+@media (min-width: 1201px) {
+    #main {
+        display: flex;
+        flex-direction: row; /* Pone los bloques en una fila */
+        gap: 30px; /* Añade espacio entre las columnas */
+    }
+
+    #derecha {
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+    }
+
+    #menu, #descripcion, #contenido {
+        display: flex;
+        flex-direction: column; /* Mantiene el flujo vertical interno */
+        height: 100vh;
+    }
+
+}

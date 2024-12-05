@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #ffffe0;
+    color:white;
+    text-align: center;
+}
+
+/*Contenedor*/
+#contenedor{
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* Cabecera */
+#header {
+    background-color: green;
+    height: 8vh;
+    line-height: 8vh;
+}
+
+#aside {
+    background-color: rgb(14, 136, 173);
+    width: 25%;
+    height: 80vh;
+    float: left;
+}
+
+#main {
+    background-color: rgb(138, 81, 192);
+    width: 75%;
+    height: 80vh;
+    float: left;
+}
+
+#footer {
+    background-color: lightcoral;
+    float: left;
+    height: 3vh;
+    line-height: 3vh;
+    width: 100%;
+}
+
+#grande1 {
+    border: 5px solid red;
+    margin-left: 5%;
+    width: 88%;
+    height: 30vh;
+}
+
+#peq01{
+    border: 5px solid blue;
+    margin-left: 6%;
+    margin-top: 5%;
+    float: left;
+    width: 40%;
+    height: 20vh;
+}
+
+#peq02{
+    border: 5px solid blue;
+    margin-left: 5%;
+    margin-top: 5%;
+    float: left;
+    width: 40%;
+    height: 20vh;
+}
+
+#grande2{
+    border: 5px solid red;
+    margin-top: 6%;
+    margin-left: 5%;
+    width: 88%;
+    height: 30vh;
+}
+
+#peq11{
+    border: 5px solid blue;
+    margin-left: 6%;
+    margin-top: 5%;
+    float: left;
+    width: 25%;
+    height: 20vh;
+}
+
+#peq12{
+    border: 5px solid blue;
+    margin-left: 5%;
+    margin-top: 5%;
+    float: left;
+    width: 25%;
+    height: 20vh;
+}
+
+#peq13{
+    border: 5px solid blue;
+    margin-left: 5%;
+    margin-top: 5%;
+    float: left;
+    width: 25%;
+    height: 20vh;
+}
