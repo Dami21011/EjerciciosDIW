@@ -186,7 +186,7 @@ li a {
 }
 
 /* Contenedor adicional de texto dentro de 'modelos' */
-#modelos #texto2 {
+#modelos #texto2,#texto3,#texto4 {
     margin-top: 3rem; /* Margen superior */
     display: flex; /* Flexbox */
     flex-direction: column; /* Organización en columna */
@@ -326,19 +326,32 @@ footer {
 #flecha {
     display: none; /* Oculta por defecto */
     position: fixed; /* Posición fija */
-    top: 92%; /* Posición desde arriba */
-    left: 85%; /* Posición desde la izquierda */
-    width: 10%; /* Ancho de la flecha */
+    bottom: 10px; /* Posición desde arriba */
+    right: 10px; /* Posición desde la izquierda */
+    width: 7%; /* Ancho de la flecha */
+    height: 7%; /* Altura de la flecha */
 }
 
 /* Media queries para dispositivos pequeños */
 @media (min-width: 576px) and (max-width: 767px) {
-    p {
+    html {
         font-size: var(--tam-fuente-sm);
     }
 
     #Imagen2 {
         margin-bottom: 2rem;
+    }
+
+    #Imagen3 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #texto3,#texto4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #Imagen5 {
@@ -353,15 +366,48 @@ footer {
 
 /* Media queries para dispositivos medianos */
 @media (min-width: 768px) and (max-width: 991px)  {
+    html {
+        font-size: var(--tam-fuente-md);
+    }
 
+    header h1 {
+        font-size: 3rem; /* Tamaño del título */
+    }
+
+    /* Estilos de los ítems del menú */
+    li {
+        font-size: 2.8rem; /* Tamaño del texto */
+    }
+
+    /* Estilo del párrafo dentro de la caja */
+    #caja p {
+        font-size: 4rem; /* Tamaño del texto */
+    }
+
+    #texto p {
+        font-size: 1.70rem;
+    }
+
+    #Imagen2,#Imagen3,#Imagen4,#Imagen5 {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #modelos h1 {
+        margin-top: 5rem;
+        font-size: 4rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    textarea {
+        height: 10rem;
+    }
 }
 
 /* Media queries para dispositivos grandes */
 @media (min-width: 992px) and (max-width: 1199px)  {
-
-}
-
-/* Media queries para dispositivos extra grandes */
-@media (min-width: 1200px) {
 
 }

@@ -366,10 +366,131 @@ footer {
 
 /* Media queries para dispositivos medianos */
 @media (min-width: 768px) and (max-width: 991px)  {
+    html {
+        font-size: var(--tam-fuente-md);
+    }
 
+    header h1 {
+        font-size: 3rem; /* Tamaño del título */
+    }
+
+    /* Estilos de los ítems del menú */
+    li {
+        font-size: 2.8rem; /* Tamaño del texto */
+    }
+
+    /* Estilo del párrafo dentro de la caja */
+    #caja p {
+        font-size: 4rem; /* Tamaño del texto */
+    }
+
+    #texto p {
+        font-size: 1.70rem;
+    }
+
+    #Imagen2,#Imagen3,#Imagen4,#Imagen5 {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #modelos h1 {
+        margin-top: 5rem;
+        font-size: 4rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    textarea {
+        height: 10rem;
+    }
 }
 
 /* Media queries para dispositivos grandes */
 @media (min-width: 992px) and (max-width: 1199px)  {
+    html {
+        font-size: var(--tam-fuente-lg);
+    }
 
+    header {
+        width: 40%;
+    }
+
+    nav {
+        margin-top: 0.5rem;
+        width: 60%;
+    }
+
+    li {
+        font-size: 2rem;
+        margin-left: 0.75rem;
+    }
+
+    #cabeceraPC {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Configuración del menú de navegación */
+    nav ul {
+        background-color: var(--fondo-encabezado);
+    }
+
+    /* Estilos de los ítems del menú */
+    li {
+        display: inline;
+        list-style: none;
+        border: none;
+        text-align: center; /* Centramos el texto */
+    }
+
+    #Imagen1 {
+        background-image: url(../imgs/casa-bosque-lg.jpg);
+        background-size: cover;
+        height: 100%;
+    }
+
+    #Imagen2 {
+        background-image: url(../imgs/casa-cielo-lg.jpg); /* Imagen de fondo */
+    }
+
+    #Imagen3 {
+        background-image: url(../imgs/casa-basica-xs.jpg); /* Imagen de fondo */
+    }
+
+    #Imagen2,#Imagen3,#Imagen4,#Imagen5 {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Configuración de la sección 'galeria' */
+    #galeria{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #galeria img {
+        width: 40%;        background-color: var(--fondo-encabezado);
+        margin-bottom: 20px;
+    }
+
+    #galeria h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #Imagen6,#Imagen7,#Imagen8,#Imagen9,#Imagen10,#Imagen11 {
+        margin-left: 3%;
+        width: 45%;
+        height: 45%;
+        margin-bottom: 3%;
+    }
+}
+
+/* Media queries para dispositivos extra grandes */
+@media (min-width: 1200px) {
+    
 }

@@ -366,10 +366,332 @@ footer {
 
 /* Media queries para dispositivos medianos */
 @media (min-width: 768px) and (max-width: 991px)  {
+    html {
+        font-size: var(--tam-fuente-md);
+    }
 
+    header h1 {
+        font-size: 3rem; /* Tamaño del título */
+    }
+
+    /* Estilos de los ítems del menú */
+    li {
+        font-size: 2.8rem; /* Tamaño del texto */
+    }
+
+    /* Estilo del párrafo dentro de la caja */
+    #caja p {
+        font-size: 4rem; /* Tamaño del texto */
+    }
+
+    #texto p {
+        font-size: 1.70rem;
+    }
+
+    #Imagen2,#Imagen3,#Imagen4,#Imagen5 {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #modelos h1 {
+        margin-top: 5rem;
+        font-size: 4rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    textarea {
+        height: 10rem;
+    }
 }
 
 /* Media queries para dispositivos grandes */
 @media (min-width: 992px) and (max-width: 1199px)  {
+    html {
+        font-size: var(--tam-fuente-lg);
+    }
 
+    header {
+        width: 40%;
+    }
+
+    nav {
+        margin-top: 0.5rem;
+        width: 60%;
+    }
+
+    li {
+        font-size: 2rem;
+        margin-left: 0.75rem;
+    }
+
+    #cabeceraPC {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Configuración del menú de navegación */
+    nav ul {
+        background-color: var(--fondo-encabezado);
+    }
+
+    /* Estilos de los ítems del menú */
+    li {
+        display: inline;
+        list-style: none;
+        border: none;
+        text-align: center; /* Centramos el texto */
+    }
+
+    #Imagen1 {
+        background-image: url(../imgs/casa-bosque-lg.jpg);
+        background-size: cover;
+        height: 100%;
+    }
+
+    #Imagen2 {
+        background-image: url(../imgs/casa-cielo-lg.jpg); /* Imagen de fondo */
+    }
+
+    #Imagen3 {
+        background-image: url(../imgs/casa-basica-xs.jpg); /* Imagen de fondo */
+    }
+
+    #Imagen2,#Imagen3,#Imagen4,#Imagen5 {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Configuración de la sección 'galeria' */
+    #galeria{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #galeria img {
+        width: 40%;        background-color: var(--fondo-encabezado);
+        margin-bottom: 20px;
+    }
+
+    #galeria h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #Imagen6,#Imagen7,#Imagen8,#Imagen9,#Imagen10,#Imagen11 {
+        margin-left: 3%;
+        width: 45%;
+        height: 45%;
+        margin-bottom: 3%;
+    }
+}
+
+/* Media queries para dispositivos extra grandes */
+@media (min-width: 1200px) {
+    #contenedor {
+        margin: 0 auto;
+        width: 1200px;
+    }
+
+    header img {
+        height: 14vh;
+        width: 35%;
+        src: url("../imgs/favicon/favicon-32x32.png");
+    }
+
+    header h1, nav ul {
+        margin-top: 2rem;
+    }
+
+    header{
+        margin-bottom: 2rem;
+    }
+
+    nav {
+        margin-top: 0.5rem;
+        width: 60%;
+    }
+
+    li {
+        font-size: 2rem;
+        margin-left: 0.75rem;
+    }
+
+    #cabeceraPC {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    /* Configuración del menú de navegación */
+    nav ul {
+        background-color: var(--fondo-encabezado);
+        display: flex;
+        flex-direction: row;
+        margin-left: 900px;
+        justify-content: end;
+    }
+
+    /* Estilos de los ítems del menú */
+    li {
+        display: inline;
+        list-style: none;
+        border: none;
+        text-align: center; /* Centramos el texto */
+    }
+
+    #Imagen1 {
+        background-image: url("../imgs/casa-bosque-lg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    #caja {
+        display: flex;
+        justify-content: center;
+        height: 30vh;
+        padding: 3rem;
+    }
+
+    #caja p {
+        font-size: 55px;
+    }
+
+    #nosotros {
+        height: 120vh;
+    }
+
+    #nosotros h1 {
+        font-size: 4rem;
+    }
+
+    #nosotros p{
+        font-size: 1.3rem;
+    }
+
+    #Imagen2 {
+        height: 70vh;
+        background-image: url("../imgs/casa-cielo-lg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #modelos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #casa1 {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+    }
+
+    #casa1 #Imagen3 {
+        position: absolute;
+        background-image: url("../imgs/casa-basica-xl.jpg");
+        background-size: cover;
+        background-position: center;
+        margin-top: 5rem;
+        width: 60%;
+        height: 60vh;
+        right: 10px;
+        bottom: 10px;
+        z-index: 1;
+
+    }
+
+    #casa1 #texto2 {
+        position: absolute;
+        background-color: var(--blanco);
+        width: 60%;
+        margin-left: 2%;
+        z-index: 10;
+    }
+
+    #casa2 {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+    }
+
+    #casa2 #Imagen4 {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        height: 50vh;
+        bottom: 0;
+        left: 10px;
+        z-index: 1;
+
+    }
+
+    #casa2 #texto3 {
+        text-align: justify;
+        position: absolute;
+        background-color: var(--blanco);
+        width: 50%;
+        height: 35vh;
+        right: 20px;
+        top: 2%;
+        z-index: 10;
+    }
+
+    #casa3 {
+        position: relative;
+        margin-top: 3%;
+        width: 100%;
+        height: 60vh;
+    }
+
+    #casa3 #Imagen5 {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        margin-top: 5rem;
+        width: 60%;
+        height: 60vh;
+        right: 10px;
+        bottom: 10px;
+        z-index: 1;
+    }
+
+    #casa3 #texto4 {
+        position: absolute;
+        background-color: var(--blanco);
+        width: 60%;
+        margin-left: 5%;
+        z-index: 10;
+    }
+
+    #contacto,#galeria,footer {
+        margin: 0 auto;
+        width: 75.7%;
+    }
+
+    #galeria{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #galeria img {
+        width: 40%;        background-color: var(--fondo-encabezado);
+        margin-bottom: 20px;
+    }
+
+    #galeria h1 {
+        text-align: center;
+        width: 100%;
+    }
+    
 }
