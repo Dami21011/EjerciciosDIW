@@ -335,32 +335,32 @@ footer {
 /* Media queries para dispositivos pequeños */
 @media (min-width: 576px) and (max-width: 767px) {
     html {
-        font-size: var(--tam-fuente-sm);
+        font-size: var(--tam-fuente-sm); /* Tamaño de fuente para dispositivos pequeños */
     }
 
     #Imagen2 {
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; /* Margen inferior para la imagen */
     }
 
     #Imagen3 {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background-repeat: no-repeat; /* No se repite el fondo */
+        background-size: cover; /* Tamaño del fondo */
+        background-position: center; /* Posición del fondo */
     }
 
     #texto3,#texto4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: flex; /* Usamos flexbox */
+        flex-direction: column; /* Alineación vertical */
+        align-items: center; /* Centramos horizontalmente */
     }
 
     #Imagen5 {
-        height: 55vh;
+        height: 55vh; /* Altura de la imagen */
     }
 
     #Imagen4,#Imagen5 {
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-repeat: no-repeat; /* No se repite el fondo */
+        background-size: cover; /* Tamaño del fondo */
     }
 }
 
