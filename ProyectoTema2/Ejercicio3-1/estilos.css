@@ -504,7 +504,7 @@ footer {
     
 }
 
-@media (orientation: landscape){
+@media (orientation: landscape) and (max-width: 932px) {
     header h1, ul li{
         font-size: 1.5rem; /* Tamaño del texto */
     }
@@ -522,7 +522,7 @@ footer {
     }
 
     #modelos {
-        height: 550vh; /* Altura del contenedor */
+        height: 625vh; /* Altura del contenedor */
     }
 
     #Imagen4 {
@@ -530,7 +530,7 @@ footer {
     }
 
     #Imagen5 {
-        height: 80vh; /* Altura de la imagen */
+        height: 110vh; /* Altura de la imagen */
     }
 
     /* Estilos de las imágenes en la galería */
@@ -539,10 +539,10 @@ footer {
     }
 
     #contacto {
-        height: 170vh; /* Altura del contenedor */
+        height: 200vh; /* Altura del contenedor */
     }
 
     form {
-        height: 100vh; /* Altura del formulario */
+        height: 120vh; /* Altura del formulario */
     }
 }
