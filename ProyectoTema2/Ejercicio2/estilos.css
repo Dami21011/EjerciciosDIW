@@ -159,6 +159,8 @@ li a {
 /* Imagen de fondo en la sección con ID 'Imagen2' */
 #Imagen2 {
     background-image: url(../imgs/casa-cielo-xs.jpg); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-size: cover; /* La imagen cubre todo */
     height: 50vh; /* Altura de la imagen */
     width: 80%; /* Ancho de la imagen */
     margin-top: 5rem; /* Margen superior */
@@ -196,6 +198,8 @@ li a {
 /* Imagen de fondo en la sección con ID 'Imagen3' */
 #Imagen3 {
     background-image: url(../imgs/casa-basica-xs.jpg); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-size: cover; /* La imagen cubre todo */
     height: 40vh; /* Altura de la imagen */
     width: 100%; /* Ancho completo */
 }
@@ -208,6 +212,8 @@ li a {
 /* Imagen de fondo en la sección con ID 'Imagen4' */
 #Imagen4 {
     background-image: url(../imgs/casa-grande-xs.jpg); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-size: cover; /* La imagen cubre todo */
     height: 30vh; /* Altura de la imagen */
     width: 100%; /* Ancho completo */
     margin-bottom: 2rem; /* Margen inferior */
@@ -216,6 +222,8 @@ li a {
 /* Imagen de fondo en la sección con ID 'Imagen5' */
 #Imagen5 {
     background-image: url(../imgs/casa-lago-xs.jpg); /* Imagen de fondo */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-size: cover; /* La imagen cubre todo */
     height: 40vh; /* Altura de la imagen */
     width: 100%; /* Ancho completo */
 }
@@ -273,7 +281,7 @@ form {
     border-radius: 10px; /* Bordes redondeados */
     padding: 2.2rem; /* Relleno interno */
     width: 80%; /* Ancho del formulario */
-    height: 50%; /* Altura del formulario */
+    height: 55vh; /* Altura del formulario */
 }
 
 /* Estilo del ícono de sobre (correo) */
@@ -410,4 +418,47 @@ footer {
 /* Media queries para dispositivos grandes */
 @media (min-width: 992px) and (max-width: 1199px)  {
 
+}
+
+@media (orientation: landscape){
+    header h1, ul li{
+        font-size: 1.5rem; /* Tamaño del texto */
+    }
+
+    #caja p {
+        font-size: 2.5rem; /* Tamaño del texto */
+    }
+
+    #nosotros{
+        height: 250vh; /* Altura del contenedor */
+    }
+
+    #Imagen2,#Imagen3{
+        height: 105vh; /* Altura de la imagen */
+    }
+
+    #modelos {
+        height: 550vh; /* Altura del contenedor */
+    }
+
+    #Imagen4 {
+        height: 65vh; /* Altura de la imagen */
+    }
+
+    #Imagen5 {
+        height: 80vh; /* Altura de la imagen */
+    }
+
+    /* Estilos de las imágenes en la galería */
+    #Imagen6, #Imagen7, #Imagen8, #Imagen9, #Imagen10, #Imagen11 {
+        height: 80vh; /* Altura de la imagen */
+    }
+
+    #contacto {
+        height: 170vh; /* Altura del contenedor */
+    }
+
+    form {
+        height: 100vh; /* Altura del formulario */
+    }
 }
